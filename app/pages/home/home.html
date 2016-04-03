@@ -1,0 +1,63 @@
+<ion-navbar *navbar>
+  <ion-title>
+    CPUZ Ionic
+  </ion-title>
+</ion-navbar>
+
+<ion-content>
+  <button danger block (click)= "showinfo()">View Informationt</button>
+
+<div *ngIf = "istrue">  
+    
+  <ion-card>
+  <ion-card-header>
+    Model
+  </ion-card-header>
+  <ion-card-content>
+    {{model}}
+  </ion-card-content>
+</ion-card>
+
+  <ion-card>
+  <ion-card-header>
+    Manufecturer
+  </ion-card-header>
+  <ion-card-content>
+    {{manufecturer}}
+  </ion-card-content>
+</ion-card>
+
+  <ion-card>
+  <ion-card-header>
+    UUID
+  </ion-card-header>
+  <ion-card-content>
+    {{uuid}}
+  </ion-card-content>
+</ion-card>
+
+  <ion-card>
+  <ion-card-header>
+    Plateform
+  </ion-card-header>
+  <ion-card-content>
+    {{platform}}
+  </ion-card-content>
+</ion-card>
+
+  <ion-card>
+  <ion-card-header>
+    Version
+  </ion-card-header>
+  <ion-card-content>
+    {{version}}
+  </ion-card-content>
+</ion-card>
+
+</div>
+
+
+
+
+</ion-content>
+
